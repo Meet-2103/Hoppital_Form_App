@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
 
                 //logo
@@ -158,7 +158,7 @@ class LoginPage extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 45,
+                  height: 20,
                 ),
 
                 //not a member register button
@@ -175,7 +175,7 @@ class LoginPage extends StatelessWidget {
                     //       color: Colors.blue, fontWeight: FontWeight.bold),
                     // ),
                     MyButton1(
-                        // onTap: signUserIn,
+                        // onTap: Register now,
                         ),
                   ],
                 ),

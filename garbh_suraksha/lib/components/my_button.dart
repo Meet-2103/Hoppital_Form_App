@@ -11,6 +11,8 @@ class MyButton extends StatelessWidget {
     return GestureDetector(
       onTap: () => Navigator.push(
           context, MaterialPageRoute(builder: (context) => const HomePage())),
+
+      ///directed to home page
       child: Container(
         padding: const EdgeInsets.all(25),
         margin: const EdgeInsets.symmetric(horizontal: 45),
