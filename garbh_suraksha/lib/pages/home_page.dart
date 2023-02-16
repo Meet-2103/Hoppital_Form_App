@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/caste_button.dart';
 import '../components/toggle_button.dart';
+import './pregnency_details.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -378,7 +379,13 @@ class _HomePageState extends State<HomePage> {
                             ),
 
                             MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const PregnancyDetails()));
+                              },
                               minWidth: double.infinity,
                               color: Colors.black,
                               child: const Padding(
@@ -436,88 +443,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-// import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
-// //import 'package:google_nav_bar/google_nav_bar.dart';
-// //import 'package:intl/intl.dart';
-
-// class HomePage extends StatelessWidget {
-//   HomePage({super.key});
-
-//   final _nameController = TextEditingController();
-
-//   // final _aadharController = TextEditingController();
-//   @override
-//   Widget build(BuildContext context) {
-//     return SafeArea(
-//       child: Scaffold(
-//         appBar: AppBar(
-//           title: const Text('Garbh Suraksha'),
-//           //centerTitle: true,
-//         ),
-//         body: SizedBox(
-//           height: 100,
-//           child: Column(
-           
-//             children: [
-//               Container(
-//                 padding: const EdgeInsets.all(5),
-//                 child: Text(
-//                   'Form 1',
-//                   style: GoogleFonts.acme(
-//                     fontSize: 25,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 ),
-//               ),
-//               const Text('Hello'),
-
-//               const SizedBox(
-//                 height: 10,
-//               ),
-
-//               Container(
-//                 decoration: BoxDecoration(
-//                   borderRadius: BorderRadius.circular(10),
-//                   border: Border.all(
-//                     color: Colors.green,
-//                     width: 2,
-//                   ),
-//                 ),
-//                 child: Row(
-//                   children: [
-//                     const Text('Name:'),
-//                     SizedBox(
-//                       height: 50,
-//                       child: TextField(
-//                         decoration: const InputDecoration(labelText: 'Name'),
-//                         controller: _nameController,
-//                         onSubmitted: null,
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//               // ignore: prefer_const_constructors
-//               // SizedBox(
-//               //   height: 20,
-//               // ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
-
-
