@@ -234,16 +234,18 @@ class _HomePageState extends State<HomePage> {
                             const SizedBox(
                               height: 20,
                             ),
-                            Row(
-                              children: const [
-                                Text(
-                                  'Caste: ',
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                ToggleCasteButons(),
-                              ],
+                            FittedBox(
+                              child: Row(
+                                children: const [
+                                  Text(
+                                    'Caste: ',
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  ToggleCasteButons(),
+                                ],
+                              ),
                             ),
                             // TextFormField(
                             //   controller: _caste,
